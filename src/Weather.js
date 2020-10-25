@@ -22,13 +22,12 @@ export default function Weather() {
               <span className="degrees">
               {" "}
               <strong>75</strong>
-              <a href="#" id="fahrenheit-link">
+            
                   °F
-              </a>
               |
-              <a href="#" id="celsius-link">
+             
                   °C
-              </a>
+              
               </span>
           </span>
         </div>
