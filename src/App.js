@@ -8,11 +8,7 @@ export default function App() {
     <div>
       <Weather />
 
-      <p>
-        This project was coded by Amanda Carter and is
-        <a href="https://github.com/akcarter86/my-weather-app-react" target="_blank">open-sourced on GitHub</a>
-      </p>
-
+     
     </div>
   );
 }
