@@ -18,48 +18,43 @@ export default function Weather() {
                     src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                     alt="Sunny"
                 />
-            <span className="temperature">
-              <span className="degrees">
-              {" "}
-              <strong>75</strong>
-            
-                  °F
-              |
-             
-                  °C
-              
-              </span>
-          </span>
-        </div>
-        <div className="col-6">
-          <ul>
-              <li>Precipitation: 5%</li>
-              <li>Humidity: 20%</li>
-              <li>Wind: 10mph</li>
-          </ul>
-        </div>
-      </div>
-    <span className="search-bar">
-        <form id="search-form">
-          <div className="form-group">
-              <input
-              type="search"
-              placeholder="Type the city..."
-              autoFocus="on"
-              autoComplete="off"
-              id="city-search"
-              />
-              <input type="button" value="Search" id="city" />
+                  <span className="temperature">
+                    <span className="degrees">
+                    {" "}
+                    <strong>75</strong>
+                  
+                        °F
+                    |
+                  
+                        °C
+                    
+                    </span>
+                </span>
+              </div>
+            <div className="col-6">
+              <ul>
+                  <li>Precipitation: 5%</li>
+                  <li>Humidity: 20%</li>
+                  <li>Wind: 10mph</li>
+              </ul>
+            </div>
           </div>
-        </form>
-    </span>
+        <span className="search-bar">
+            <form id="search-form">
+              <div className="form-group">
+                  <input
+                  type="search"
+                  placeholder="Type the city..."
+                  autoFocus="on"
+                  autoComplete="off"
+                  id="city-search"
+                  />
+                  <input type="button" value="Search" id="city" />
+              </div>
+            </form>
+        </span>
+        </div>
       </div>
-    <p>
-      This project was coded by Amanda Carter and is
-      <a href="https://github.com/akcarter86/my-weather-app-react" target="_blank">open-sourced on GitHub</a>
-    </p>
     </div>
-
-</div>
   );
 }
