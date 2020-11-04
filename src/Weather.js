@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css";
 
 
 export default function Weather() {
@@ -57,7 +58,10 @@ export default function Weather() {
       </div>
       <p>
         This project was coded by Amanda Carter and it is {" "}
-        <a href="https://github.com/akcarter86/my-weather-app-react" target="_blank" rel="noopener noreferrer"> open-sourced on GitHub</a>
+        <a href="https://github.com/akcarter86/my-weather-app-react" 
+          target="_blank" 
+          rel="noopener noreferrer"> 
+          open-sourced on GitHub</a>
       </p>
     </div>
   );
