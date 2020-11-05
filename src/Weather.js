@@ -41,8 +41,10 @@ export default function Weather() {
             </div>
           </div>
         <span className="search-bar">
-            <form id="search-form">
-              <div className="form-group">
+          <form id="search-form">
+            <div className="form-group">
+              <div className="row">
+                <div className="col-9">
                   <input
                   type="search"
                   placeholder="Type the city..."
@@ -50,9 +52,13 @@ export default function Weather() {
                   autoComplete="off"
                   id="city-search"
                   />
+                </div>
+                <div className="col-3">
                   <input type="button" value="Search" id="city" />
+                </div>
               </div>
-            </form>
+            </div>
+          </form>
         </span>
         </div>
       </div>
