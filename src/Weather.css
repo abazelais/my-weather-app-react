@@ -1,8 +1,18 @@
 .weather-app {
+    font-family: 'Luckiest Guy', cursive;
     border: 3px solid #FD729C;
     background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.weather-app ul {
+    margin: 0;
+    padding: 0;
+}
+.weather-app li {
+    list-style: none;
 }
 
-li {
-    list-style: none;
+.weather-app form {
 }

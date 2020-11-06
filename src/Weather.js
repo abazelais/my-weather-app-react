@@ -54,7 +54,7 @@ export default function Weather() {
                   />
                 </div>
                 <div className="col-3">
-                  <input type="button" value="Search" id="city" />
+                  <input type="button" value="Search" className="btn btn-primary w-100" />
                 </div>
               </div>
             </div>
@@ -62,13 +62,15 @@ export default function Weather() {
         </span>
         </div>
       </div>
-      <p>
+        <p>
+          <small>
         This project was coded by Amanda Carter and it is {" "}
         <a href="https://github.com/akcarter86/my-weather-app-react" 
           target="_blank" 
           rel="noopener noreferrer"> 
           open-sourced on GitHub</a>
-      </p>
+         </small>
+       </p>
     </div>
   );
 }
