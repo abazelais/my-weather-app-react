@@ -1,8 +1,24 @@
-import React from "react";
+import React { useState } from "react";
+import CurrentDate from "./CurrentDate";
 import "./Weather.css";
+import axios from "axios";
+
 
 
 export default function Weather() {
+  const [weatherInfo, setWeatherInfo] = useState ({ ready: false });
+  const [cityName, setCityName] = useState ({ });
+
+  function responseHandle(response) {
+    setWeatherInfo ({
+      ready: true,
+
+    })
+  }
+  const apiKey = "9806641a884960bc13a3323dc628066b";
+  let cityName = "Boston";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(responseHandle);
   return (
     <div className="App">
       <div className="container">
