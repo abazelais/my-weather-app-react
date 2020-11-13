@@ -29,7 +29,13 @@
     text-align: left;
 }
 
-strong {
+.weather-app .temperature {
     font-size: 60px;
     margin-bottom: 15px;
+}
+
+.weather-app .degrees {
+    font-size: 20px;
+    top: -25px;
+    right: 15px;
 }

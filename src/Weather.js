@@ -16,7 +16,7 @@ export default function Weather() {
     })
   }
   const apiKey = "9806641a884960bc13a3323dc628066b";
-  //let cityName = "Boston";
+  let city = "Boston";
   let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(responseHandle);
   return (
@@ -52,18 +52,11 @@ export default function Weather() {
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               alt="Sunny"
           />
-            <span className="temperature">
+            <span className="temperature"><strong>75</strong></span>
               <span className="degrees">
               {" "}
-              <strong>75</strong>
-            
-                  °F
-              |
-            
-                  °C
-              
+                °F|°C
               </span>
-          </span>
         </div>
         <div className="col-6">
           <ul>
