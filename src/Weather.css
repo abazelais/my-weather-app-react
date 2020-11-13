@@ -6,10 +6,25 @@
     margin: 40px auto;
     padding: 20px;
 }
+
+.weather-app h1 {
+    display: block;
+    font-size: 40px;
+    font-weight: 200px;
+    line-height: 29px;
+    margin-top: 20px 0 0 0;
+}
+
 .weather-app ul {
     margin: 0;
     padding: 0;
 }
+
 .weather-app li {
     list-style: none;
+    display: block;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 19.2px;
+    text-align: left;
 }
