@@ -16,7 +16,7 @@ export default function Weather() {
     })
   }
   const apiKey = "9806641a884960bc13a3323dc628066b";
-  let cityName = "Boston";
+  //let cityName = "Boston";
   let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(responseHandle);
   return (
