@@ -23,10 +23,31 @@ export default function Weather() {
     <div className="App">
       <div className="container">
         <div className="weather-app">
-          <h1>Methuen, MA</h1>
+          
+          <form>
+            <div className="form-group">
+              <div className="row">
+                <div className="col-9">
+                  <input
+                  type="search"
+                  placeholder="Type the city..."
+                  autoFocus="on"
+                  autoComplete="off"
+                  className="form-control"
+                  />
+                </div>
+                <div className="col-3">
+                  <input type="submit" value="Search" className="btn btn-primary w-100" />
+                </div>
+              </div>
+            </div>
+          </form>
+          
+          <h1>Malden</h1>
 
           <ul>
-              <li>Clear</li>
+            <li><CurrentDate /></li>
+            <li>Clear</li>
           </ul>
 
             <div className="row">
@@ -56,26 +77,6 @@ export default function Weather() {
               </ul>
             </div>
           </div>
-        <span className="search-bar">
-          <form id="search-form">
-            <div className="form-group">
-              <div className="row">
-                <div className="col-9">
-                  <input
-                  type="search"
-                  placeholder="Type the city..."
-                  autoFocus="on"
-                  autoComplete="off"
-                  id="city-search"
-                  />
-                </div>
-                <div className="col-3">
-                  <input type="button" value="Search" className="btn btn-primary w-100" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </span>
         </div>
       </div>
         <p>

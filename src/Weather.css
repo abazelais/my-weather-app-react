@@ -1,6 +1,6 @@
 .weather-app {
     font-family: 'Luckiest Guy', cursive;
-    border: 3px solid #FD729C;
+    border: 5px solid #FD729C;
     background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
     border-radius: 10px;
     margin: 40px auto;
