@@ -28,3 +28,8 @@
     line-height: 19.2px;
     text-align: left;
 }
+
+strong {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
