@@ -1,15 +1,18 @@
 .weather-app {
     font-family: 'Luckiest Guy', cursive;
-    border: 5px solid #FD729C;
-    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    border: 5px solid #7E6DEE;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     border-radius: 10px;
     margin: 40px auto;
     padding: 20px;
 }
-
+.weather-app form {
+    margin-bottom: 40px;
+}
 .weather-app h1 {
+    color: #b3b3b3;
     display: block;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 200px;
     line-height: 29px;
     margin-top: 20px 0 0 0;
@@ -28,6 +31,13 @@
     line-height: 19.2px;
     text-align: left;
 }
+
+.weather-app .image-icon {
+    margin-right: 5px;
+    height: 64px;
+    width: 64px;
+    margin-bottom: 20px;
+  }
 
 .weather-app .temperature {
     font-size: 60px;
