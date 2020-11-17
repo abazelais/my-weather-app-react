@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //import CurrentDate from "./CurrentDate";
 import "./Weather.css";
 import axios from "axios";
@@ -6,7 +6,7 @@ import axios from "axios";
 
 
 export default function Weather() {
-  //const [weatherInfo, setWeatherInfo] = useState ({ ready: false });
+  const [weatherInfo, setWeatherInfo] = useState ({ ready: false });
   //const [cityName, setCityName] = useState ({ });
 
   function responseHandle(response) {
@@ -14,20 +14,16 @@ export default function Weather() {
     setWeatherInfo ({
       ready: true,
       temp: response.data.main.temp,
-      city: response.data.city.name,
+      //city: response.data.city.name,
       humidity: response.data.main.humidity,
       discription: response.data.weather[0].description,
       wind: response.data.main.wind.speed,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
 
-    })
+    });
   }
-  const apiKey = "9806641a884960bc13a3323dc628066b";
-  let city = "Boston";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(responseHandle);
 
-  if(ready) {
+  if(weatherInfo.ready) {
 
     return (
       <div className="weather-app">
@@ -79,9 +75,12 @@ export default function Weather() {
     );
 
   } else {
-    return (
-      <div>Loading....</div>
-    );
+    const apiKey = "9806641a884960bc13a3323dc628066b";
+    let city = "Boston";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(responseHandle);
+
+    return "Loading...";
   }
   
   
