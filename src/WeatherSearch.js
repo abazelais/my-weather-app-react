@@ -1,5 +1,7 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
+import WeatherIcon from "./WeatherIcon";
+
 
 
 export default function WeatherSearch(props) {
@@ -15,6 +17,12 @@ export default function WeatherSearch(props) {
 
           <div className="row">
             <div className="col-6">
+                <div className="float-left">
+                    <WeatherIcon 
+                    code={props.info.icon} 
+                    alt={props.info.description}
+                    />
+                </div>
             <img className="image-icon"
                 src={props.info.iconUrl}
                 alt={props.info.description}
