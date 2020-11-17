@@ -32,11 +32,10 @@
     text-align: left;
 }
 
-.weather-app .image-icon {
+.weather-app canvas {
     margin-right: 5px;
-    height: 64px;
-    width: 64px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    display: inline 10px;
   }
 
 .weather-app .temperature {
