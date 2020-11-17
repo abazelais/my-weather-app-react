@@ -23,10 +23,7 @@ export default function WeatherSearch(props) {
                     alt={props.info.description}
                     />
                 </div>
-            <img className="image-icon"
-                src={props.info.iconUrl}
-                alt={props.info.description}
-            />
+                
                 <span className="temperature"><strong>{props.info.temp}</strong></span>
                 <span className="degrees">
                 {" "}
