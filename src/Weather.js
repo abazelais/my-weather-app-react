@@ -14,10 +14,10 @@ export default function Weather(props) {
     setWeatherInfo ({
       ready: true,
       temp: response.data.main.temp,
-      //city: response.data.city.name,
+      city: response.data.name,
       humidity: response.data.main.humidity,
       discription: response.data.weather[0].description,
-      wind: response.data.main.wind.speed,
+      wind: response.data.wind.speed,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
 
     });
@@ -75,8 +75,9 @@ export default function Weather(props) {
     );
 
   } else {
+
     const apiKey = "9806641a884960bc13a3323dc628066b";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=imperial`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(responseHandle);
 
     return "Loading...";
