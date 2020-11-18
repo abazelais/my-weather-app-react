@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import WeatherSearch from "./WeatherSearch";
-import "./Weather.css";
 import axios from "axios";
-
-
+import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherInfo, setWeatherInfo] = useState ({ ready: false });
@@ -24,6 +22,14 @@ export default function Weather(props) {
 
     });
   }
+  function submitForm (event) {
+    event.preventDefault();
+    newSearch();
+  }
+  
+  function handleChangeCity(event) {
+    setCityName(event.target.value);
+  }
 
   function newSearch() {
     const apiKey = "4c6cd6bd5d47bc119ac820d821525e7e";
@@ -31,20 +37,10 @@ export default function Weather(props) {
     axios.get(apiUrl).then(responseHandle);
   }
 
-  function submitForm (event) {
-    event.preventDefault();
-    newSearch();
-  }
-
-  function handleChangeCity(event) {
-    setCityName(event.target.value);
-  }
-
   if(weatherInfo.ready) {
 
     return (
       <div className="weather-app">
-        
         <form onSubmit={submitForm}>
           <div className="row">
             <div className="col-9">
@@ -58,12 +54,15 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-3">
-              <input type="submit" value="Search" className="btn btn-primary w-100" />
+              <input 
+                type="submit" 
+                value="Search" 
+                className="btn btn-info w-100" 
+              />
             </div>
           </div>
         </form>
           <WeatherSearch info={weatherInfo}/>
-        
       </div>
     );
 
@@ -72,7 +71,7 @@ export default function Weather(props) {
     newSearch();
 
     return "Loading...";
+
   }
-  
   
 }

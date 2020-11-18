@@ -14,21 +14,34 @@ export default function UnitsOfTemperature(props) {
     setUnits("fahrenheit");
   }
 
+  function celsiusTemp() {
+    return (props.fahrenheit - 32) * 5/9;
+  } 
+
   if(units === "fahrenheit") {
     return (
     <div className="unitsOfTemp">
       <span className="temperature"><strong>{Math.round(props.fahrenheit)}</strong></span>
-        <span className="degrees">{" "}°F| <a href="/" onClick={displayCelsius}>°C</a> </span>
+        <span className="degrees">
+          °F |{" "} 
+          <a href="/" onClick={displayCelsius}>
+            °C
+          </a> 
+        </span>
     </div>
-  
+
     );
     
   } else {
-    let celsiusTemp = (props.fahrenheit - 32) * 5/9;
     return (
       <div className="unitsOfTemp">
-        <span className="temperature"><strong>{Math.round(celsiusTemp)}</strong></span>
-          <span className="degrees">{" "}<a href="/" onClick={displayFahrenheit}>°F</a>| °C </span>
+        <span className="temperature"><strong>{Math.round(celsiusTemp())}</strong></span>
+          <span className="degrees">
+            <a href="/" onClick={displayFahrenheit}>
+              °F
+              </a>{" "}
+              | °C 
+          </span>
       </div>
     );
   }
