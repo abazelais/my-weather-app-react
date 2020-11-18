@@ -1,6 +1,7 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
+import UnitsOfTemperature from "./UnitsOfTemperature";
 
 
 
@@ -23,12 +24,8 @@ export default function WeatherSearch(props) {
                     alt={props.info.description}
                     />
                 </div>
+                <UnitsOfTemperature fahrenheit={props.info.temperature}/>
                 
-                <span className="temperature"><strong>{props.info.temp}</strong></span>
-                <span className="degrees">
-                {" "}
-                    °F|°C
-                </span>
             </div>
             <div className="col-6">
             <ul>
