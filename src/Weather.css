@@ -25,7 +25,7 @@
 
 .weather-app li {
     list-style: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
     line-height: 19.2px;
     text-align: left;
@@ -44,9 +44,10 @@
 }
 
 .weather-app .degrees {
-    font-size: 20px;
-    bottom: -40px;
-    right: 25px;
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    right: -1px;
     
 
 }
