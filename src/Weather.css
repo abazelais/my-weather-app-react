@@ -1,13 +1,13 @@
 .weather-app {
     font-family: 'Luckiest Guy', cursive;
-    border: 5px solid #7E6DEE;
+    border: 8px solid #7E6DEE;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     border-radius: 10px;
     margin: 40px auto;
     padding: 20px;
 }
 .weather-app h1 {
-    color: #b3b3b3;
+    color: #333333;
     font-size: 60px;
     font-weight: 100px;
     margin: 20px 0 0 0;
@@ -25,7 +25,7 @@
 
 .weather-app li {
     list-style: none;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 100;
     line-height: 19.2px;
     text-align: left;
@@ -38,14 +38,15 @@
   }
 
 .weather-app .temperature {
-    font-size: 60px;
+    font-size: 80px;
     margin-bottom: 15px;
     
 }
 
 .weather-app .degrees {
     font-size: 20px;
-    top: 40px;
+    bottom: -40px;
     right: 25px;
+    
 
 }
