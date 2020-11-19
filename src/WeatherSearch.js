@@ -16,10 +16,9 @@ export default function WeatherSearch(props) {
           <li className="text-capitalize"> {props.info.description} </li>
       </ul>
 
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
           <div className="clearfix">
-
             <div className="float-left">
                 <WeatherIcon code={props.info.icon}/>
             </div>
