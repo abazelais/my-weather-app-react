@@ -19,7 +19,7 @@
 }
 
 .weather-app ul {
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
 }
 
@@ -45,6 +45,7 @@
 
 .weather-app .degrees {
     font-size: 20px;
-    top: -25px;
+    top: 40px;
     right: 25px;
+
 }

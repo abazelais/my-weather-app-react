@@ -18,15 +18,12 @@ export default function WeatherForecast(props) {
 		
   return  (
     <div className="WeatherForecasting row">
-      <div className="col">
         <WeatherForecastInput data={forecast.list[0]}/>
         <WeatherForecastInput data={forecast.list[1]}/>
         <WeatherForecastInput data={forecast.list[2]}/>
         <WeatherForecastInput data={forecast.list[3]}/>
         <WeatherForecastInput data={forecast.list[4]}/>
         <WeatherForecastInput data={forecast.list[5]}/>
-
-      </div>
     </div>
   );
 
