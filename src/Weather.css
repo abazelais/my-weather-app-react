@@ -11,11 +11,9 @@
 }
 .weather-app h1 {
     color: #b3b3b3;
-    display: block;
     font-size: 60px;
     font-weight: 200px;
     line-height: 29px;
-    margin-top: 20px 0 0 0;
 }
 
 .weather-app ul {
