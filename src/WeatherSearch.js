@@ -25,7 +25,7 @@ export default function WeatherSearch(props) {
             </div>
 
             <div className="float-left">
-              <UnitsOfTemperature fahrenheit={props.info.temperature}/>
+              <UnitsOfTemperature fahrenheit={props.info.temp}/>
             </div>
             
           </div>
